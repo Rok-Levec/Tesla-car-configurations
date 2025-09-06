@@ -27,37 +27,37 @@
     <header class="flex justify-between items-center px-10 py-6 mt-16">
       <img src="./images/logo.svg" alt="Tesla" width="120" height="24" />
       <button>
-        <i class="fa-solid fa-globe"></i><span class="font-bold">US</span>
+        <i class="fa-solid fa-globe"></i> <span class="font-bold">US</span>
       </button>
     </header>
 
     <main class="flex flex-col md:flex-row justify-between px-4 md:px-10 py-6">
+      <!-- Image Section -->
       <section class="w-full md:w-3/4">
         <div class="sticky top-24">
-          <!-- Exterior image-->
+          <!-- Exterior Image -->
           <div
-            class="h-96- bg-gray-200 items-center justify-center overflow-hidden mb-4"
+            class="h-96 bg-gray-200 flex items-center justify-center overflow-hidden mb-4"
           >
             <img
               src="./images/model-y-stealth-grey.jpg"
-              alt=""
+              alt="Model Y"
               class="max-w-full h-auto transform scale-125"
-              alt="model Y"
               id="exterior-image"
             />
           </div>
-        </div>
 
-        <!-- Interior image-->
-        <div
-          class="h-96 bg-gray-200 flex items-center justify-center overflow-hidden mb-4"
-        >
-          <img
-            src="./images/model-y-interior-dark.jpg"
-            alt="Model Y Interior"
-            class="max-w-full h-auto transform scale-125"
-            id="interior-image"
-          />
+          <!-- Interior image-->
+          <div
+            class="h-96 bg-gray-200 flex items-center justify-center overflow-hidden mb-4"
+          >
+            <img
+              src="./images/model-y-interior-dark.jpg"
+              alt="Model Y Interior"
+              class="max-w-full h-auto transform scale-125"
+              id="interior-image"
+            />
+          </div>
         </div>
       </section>
 
@@ -68,49 +68,49 @@
 
         <!-- Exteiror buttons-->
         <div class="my-8" id="exterior-buttons">
-          <h3 class="font-semibold mb-2">Exterior color</h3>
+          <h3 class="font-semibold mb-2">Exterior Color</h3>
           <div class="flex space-x-4">
             <button
-              class="btn-selected trasition-transform duration-300 hover:scale-110"
+              class="btn-selected transition-transform duration-300 hover:scale-110"
             >
               <img
                 src="./images/button-stealth-grey.avif"
-                alt="stealth grey"
+                alt="Stealth Grey"
                 class="w-22"
               />
             </button>
-            <button class="trasition-transform duration-300 hover:scale-110">
+            <button class="transition-transform duration-300 hover:scale-110">
               <img
                 src="./images/button-pearl-white.avif"
-                alt="pearl button-pearl-white"
+                alt="Pearl White"
                 class="w-22"
               />
             </button>
-            <button class="trasition-transform duration-300 hover:scale-110">
+            <button class="transition-transform duration-300 hover:scale-110">
               <img
                 src="./images/button-deep-blue-metallic.avif"
-                alt="deep blue metallic"
+                alt="Deep Blue"
                 class="w-22"
               />
             </button>
-            <button class="trasition-transform duration-300 hover:scale-110">
+            <button class="transition-transform duration-300 hover:scale-110">
               <img
                 src="./images/button-solid-black.avif"
-                alt="solid"
+                alt="Solid Black"
                 class="w-22"
               />
             </button>
-            <button class="trasition-transform duration-300 hover:scale-110">
+            <button class="transition-transform duration-300 hover:scale-110">
               <img
                 src="./images/button-ultra-red.avif"
-                alt="ultra red"
+                alt="Ultra Red"
                 class="w-22"
               />
             </button>
-            <button class="trasition-transform duration-300 hover:scale-110">
+            <button class="transition-transform duration-300 hover:scale-110">
               <img
                 src="./images/button-quicksilver.avif"
-                alt="quicksilver"
+                alt="Quicksilver"
                 class="w-22"
               />
             </button>
@@ -123,10 +123,10 @@
             <button
               class="btn-selected transition-transform duration-300 hover:scale-110"
             >
-              <img src="./images/button-dark.avif" alt="Dark" class="w-7" />
+              <img src="./images/button-dark.avif" alt="Dark" class="w-12" />
             </button>
             <button class="transition-transform duration-300 hover:scale-110">
-              <img src="./images/button-light.avif" alt="Light" class="w-7" />
+              <img src="./images/button-light.avif" alt="Light" class="w-12" />
             </button>
           </div>
         </div>
@@ -156,6 +156,72 @@
             />
             <span>Add Full Self-Driving for $8,500</span>
           </label>
+        </div>
+        <!-- Performance upgrade-->
+        <div class="mb-8">
+          <h3 class="font-semibold mb-2">Performance Package</h3>
+          <button class="w-full py-4 bg-gray-200 hover:bg-gray-400 rounded-lg">
+            Performance Upgrade (+$5,000)
+          </button>
+        </div>
+        <!-- Accessories Checkboxes -->
+        <div class="my-8">
+          <h3 class="font-semibold mb-2">Accessories</h3>
+          <div class="space-y-4">
+            <label
+              class="flex items-center justify-between py-4 px-4 border rounded-lg shadow"
+            >
+              <span>Center Console Trays</span>
+              <span class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="accessory-form-checkbox h-5 w-5"
+                />
+                <span>$35</span>
+              </span>
+            </label>
+            <label
+              class="flex items-center justify-between py-4 px-4 border rounded-lg shadow"
+            >
+              <span>Sunshade</span>
+              <span class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="accessory-form-checkbox h-5 w-5"
+                />
+                <span>$105</span>
+              </span>
+            </label>
+            <label
+              class="flex items-center justify-between py-4 px-4 border rounded-lg shadow"
+            >
+              <span>All-Weather Interior Liners</span>
+              <span class="flex items-center space-x-2">
+                <input
+                  type="checkbox"
+                  class="accessory-form-checkbox h-5 w-5"
+                />
+                <span>$225</span>
+              </span>
+            </label>
+          </div>
+        </div>
+        <!-- Total Price-->
+        <div class="pt-4">
+          <h3 class="font-semibold text-lg">Total Price</h3>
+          <p id="total-price" class="text-2xl font-bold">50.000$</p>
+        </div>
+        <!--Payment brakedown-->
+        <div class="border-t pt-4 mt-6">
+          <h3 class="font-semibold text-lg">Estimated payment Brakedown</h3>
+          <div class="mt-4">
+            <p>Down Payment</p>
+            <span id="down-payment" class="font-bold">$5000</span>
+            <p>Loan Term: <span class="font-bold">60 months</span></p>
+            <p>Interest rate: <span class="font-bold">3% APR</span></p>
+            <p>Estimated Monthly Payment:</p>
+            <span id="monthly-payment" class="text-2xl font-bold">818$</span>
+          </div>
         </div>
       </aside>
     </main>
