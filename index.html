@@ -3,27 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <title>Design your Tesla Model Y</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Design Your Tesla Model Y</title>
   </head>
   <body>
-    <!--Top Bar-->
-
-    <div id="top-bar" class="bg-gray-100 fixed top-0 right-0 left-0 py-0">
+    <!-- Top Bar -->
+    <div id="top-bar" class="bg-gray-100 fixed top-0 right-0 left-0 py-2">
       <p class="text-center py-2 font-semibold">
-        0% APR avaiable for qualified buyers
+        0% APR available for qualified buyers
       </p>
     </div>
-    <!--Header-->
+
+    <!-- Header -->
     <header class="flex justify-between items-center px-10 py-6 mt-16">
       <img src="./images/logo.svg" alt="Tesla" width="120" height="24" />
       <button>
@@ -47,7 +46,7 @@
             />
           </div>
 
-          <!-- Interior image-->
+          <!-- Interior Image -->
           <div
             class="h-96 bg-gray-200 flex items-center justify-center overflow-hidden mb-4"
           >
@@ -61,12 +60,12 @@
         </div>
       </section>
 
-      <!--Sidebar-->
+      <!-- Sidebar -->
       <aside class="w-full md:w-1/3 pl-0 md:pl-8 mt-6 md:mt-0 z-2">
         <h1 class="text-5xl text-center font-bold mb-5">Model Y</h1>
-        <h2 class="text-xl text-center font-light">Customize your car</h2>
+        <h2 class="text-xl text-center font-light">Customize Your Car</h2>
 
-        <!-- Exteiror buttons-->
+        <!-- Exterior Buttons -->
         <div class="my-8" id="exterior-buttons">
           <h3 class="font-semibold mb-2">Exterior Color</h3>
           <div class="flex space-x-4">
@@ -116,7 +115,8 @@
             </button>
           </div>
         </div>
-        <!-- interior buttons-->
+
+        <!-- Interior Buttons -->
         <div class="my-8" id="interior-buttons">
           <h3 class="font-semibold mb-2">Interior Color</h3>
           <div class="flex space-x-4">
@@ -130,7 +130,8 @@
             </button>
           </div>
         </div>
-        <!--wheel buttons-->
+
+        <!-- Wheel Buttons -->
         <div class="mb-8" id="wheel-buttons">
           <h3 class="font-semibold mb-2">Wheels</h3>
           <button
@@ -145,7 +146,7 @@
           </button>
         </div>
 
-        <!--Full self driving option-->
+        <!-- Full Self Driving Option -->
         <div class="border p-4 mb-8 rounded-lg shadow">
           <h3 class="font-semibold mb-2">Full Self-Driving</h3>
           <label class="flex items-center space-x-3">
@@ -157,13 +158,18 @@
             <span>Add Full Self-Driving for $8,500</span>
           </label>
         </div>
-        <!-- Performance upgrade-->
+
+        <!-- Performance Upgrade -->
         <div class="mb-8">
           <h3 class="font-semibold mb-2">Performance Package</h3>
-          <button class="w-full py-4 bg-gray-200 hover:bg-gray-400 rounded-lg">
+          <button
+            id="performance-btn"
+            class="w-full py-4 bg-gray-200 hover:bg-gray-400 rounded-lg"
+          >
             Performance Upgrade (+$5,000)
           </button>
         </div>
+
         <!-- Accessories Checkboxes -->
         <div class="my-8">
           <h3 class="font-semibold mb-2">Accessories</h3>
@@ -206,26 +212,34 @@
             </label>
           </div>
         </div>
-        <!-- Total Price-->
+
+        <!-- Total Price Section -->
         <div class="pt-4">
           <h3 class="font-semibold text-lg">Total Price</h3>
-          <p id="total-price" class="text-2xl font-bold">50.000$</p>
+          <p id="total-price" class="text-2xl font-bold">$52,490</p>
         </div>
-        <!--Payment brakedown-->
+
+        <!-- Payment Breakdown -->
         <div class="border-t pt-4 mt-6">
-          <h3 class="font-semibold text-lg">Estimated payment Brakedown</h3>
+          <h3 class="font-semibold text-lg">Estimated Payment Breakdown</h3>
           <div class="mt-4">
-            <p>Down Payment</p>
-            <span id="down-payment" class="font-bold">$5000</span>
-            <p>Loan Term: <span class="font-bold">60 months</span></p>
-            <p>Interest rate: <span class="font-bold">3% APR</span></p>
-            <p>Estimated Monthly Payment:</p>
-            <span id="monthly-payment" class="text-2xl font-bold">818$</span>
+            <p>
+              Down Payment:
+              <span id="down-payment" class="font-bold">$5000</span>
+            </p>
+            <p>Loan Term: <span class="font-bold">60 Months</span></p>
+            <p>Interest Rate: <span class="font-bold">3% APR</span></p>
+            <p>
+              Estimated Monthly Payment:
+              <span id="monthly-payment" class="font-bold text-2xl"
+                >$818.65</span
+              >
+            </p>
           </div>
         </div>
       </aside>
     </main>
 
-    <script src="/js/main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
